@@ -2,10 +2,20 @@
 
 ---
 
-`ffcv_torch_1_11` is compatible with `functorch`. To install `functorch` and `ffcv` on it (together with some additional common libraries not on conda), after installation do
+`ffcv_torch_1_11` is compatible with `functorch==0.1`. To install the env, together with `functorch` and `ffcv`, do
 ```
-pip install ffcv fastargs tqdm ipdb
+conda create --name <env> --file ffcv_torch_1_11
+conda activate <env>
+pip install ffcv ipdb
 pip install functorch==0.1 --no-deps
 ```
 
 ---
+
+`ffcv_torch_13` has `torch=1.13` which comes with `functorch` built in. To
+install it, together with `ffcv`, do
+```
+conda create --name <env> --file ffcv_torch_13
+conda activate <env>
+pip install ffcv ipdb
+```
