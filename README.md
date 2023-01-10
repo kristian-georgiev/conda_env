@@ -4,9 +4,9 @@
 
 `ffcv_torch_1_11` is compatible with `functorch==0.1`. To install the env, together with `functorch` and `ffcv`, do
 ```
-conda create --name <env> --file ffcv_torch_1_11
+conda create --name <env> --file ffcv_torch_1_11 python=3.9
 conda activate <env>
-pip install ffcv ipdb
+pip install ffcv ipdb scipy
 pip install functorch==0.1 --no-deps
 ```
 
